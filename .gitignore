@@ -2,8 +2,11 @@
 .DS_Store
 Desktop.ini
 
+_site/*
+
 # Thumbnail cache files
 ._*
+
 Thumbs.db
 
 # Files that might appear on external disks
