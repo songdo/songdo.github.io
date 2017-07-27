@@ -38,7 +38,7 @@
         <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
         <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
         <!--<a href="/resume/">简历</a>-->
-        <a href="/YuanSong_resume.doc">简历</a>
+        <a href="/YuanSong_resume.pdf">简历</a>
         <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">出版</a>-->
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
         <a href="/books/">书单</a>
@@ -51,7 +51,7 @@
         <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
         <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
         <!--<a href="/yuanyong_resume_cn.pdf">简历</a>-->
-        <a href="/YuanSong_resume.doc">简历</a>
+        <a href="/YuanSong_resume.pdf">简历</a>
         <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">出版</a>-->
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
         <a href="/books/">书单</a>
@@ -64,7 +64,7 @@
         <a class="{% if page.category == 'project' %} selected {% endif %}" href="/project/">Project</a>
         <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
         <!--<a href="/yuanyong_resume_cn.pdf">Resume</a>-->
-        <a href="/YuanSong_resume.doc">Resume</a>
+        <a href="/YuanSong_resume.pdf">Resume</a>
         <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">Publication</a>-->
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
         <a href="/books/">Book</a>
@@ -138,9 +138,9 @@
     _gaq.push(['_trackPageview']);
 
     (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      var ga = pdfument.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == pdfument.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = pdfument.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
     /*!
@@ -148,8 +148,8 @@
      * Copyright 2013 Sébastien Saunier
      * @license MIT
      */
-    !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
-    var links = document.links;
+    !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,pdfument);
+    var links = pdfument.links;
     for (var i = 0, linksLength = links.length; i < linksLength; i++) {
        if (links[i].hostname != window.location.hostname) { links[i].target = '_blank'; }
     }
